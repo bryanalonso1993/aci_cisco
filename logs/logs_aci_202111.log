@@ -263,3 +263,14 @@
         UNIQUE KEY `name` (`name`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
+2021-11-12 08:41:08,214|INFO|query endpoint https://sandboxapicdc.cisco.com/api/node/mo/topology/pod-1.json?query-target=children&target-subtree-class=fabricNode&query-target-filter=and(not(wcard(fabricNode.dn,%22__ui_%22)),and(ne(fabricNode.role,"controller")))
+2021-11-12 08:41:08,251|DEBUG|Starting new HTTPS connection (1): sandboxapicdc.cisco.com:443
+2021-11-12 08:41:08,918|DEBUG|https://sandboxapicdc.cisco.com:443 "POST /api/aaaLogin.json HTTP/1.1" 401 137
+2021-11-12 08:42:40,839|INFO|query endpoint https://https://sandboxapicdc.cisco.com/api/node/mo/topology/pod-1.json?query-target=children&target-subtree-class=fabricNode&query-target-filter=and(not(wcard(fabricNode.dn,%22__ui_%22)),and(ne(fabricNode.role,"controller")))
+2021-11-12 08:42:40,931|DEBUG|Starting new HTTPS connection (1): https:443
+2021-11-12 08:45:11,241|INFO|query endpoint https://sandboxapicdc.cisco.com/api/node/mo/topology/pod-1.json?query-target=children&target-subtree-class=fabricNode&query-target-filter=and(not(wcard(fabricNode.dn,%22__ui_%22)),and(ne(fabricNode.role,"controller")))
+2021-11-12 08:45:11,246|DEBUG|Starting new HTTPS connection (1): sandboxapicdc.cisco.com:443
+2021-11-12 08:45:11,844|DEBUG|https://sandboxapicdc.cisco.com:443 "POST /api/aaaLogin.json HTTP/1.1" 401 137
+2021-11-12 08:46:14,239|INFO|query endpoint https://sandboxapicdc.cisco.com/api/node/mo/topology/pod-1.json?query-target=children&target-subtree-class=fabricNode&query-target-filter=and(not(wcard(fabricNode.dn,%22__ui_%22)),and(ne(fabricNode.role,"controller")))
+2021-11-12 08:46:14,244|DEBUG|Starting new HTTPS connection (1): sandboxapicdc.cisco.com:443
+2021-11-12 08:46:14,827|DEBUG|https://sandboxapicdc.cisco.com:443 "POST /api/aaaLogin.json HTTP/1.1" 401 137

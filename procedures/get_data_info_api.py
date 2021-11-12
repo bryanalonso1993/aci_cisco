@@ -4,10 +4,9 @@ import sys
 import re
 import os
 
-MAIN_PATH = "/opt/space/python/aci"
 
-sys.path.insert(1, os.path.join(MAIN_PATH, "infraestructure"))
-sys.path.insert(1, os.path.join(MAIN_PATH, "helpers"))
+sys.path.insert(1, os.path.join(os.getcwd(), "infraestructure"))
+sys.path.insert(1, os.path.join(os.getcwd(), "helpers"))
 
 from Api import ControllerApic
 from resources import CREDENTIALS_APIC
@@ -15,7 +14,7 @@ from query_params_aci import query_params_aci
 
 # time execute process
 time_exec = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-cred_api = CREDENTIALS_APIC['production']
+cred_api = CREDENTIALS_APIC['development']
 apic = ControllerApic(cred_api['ip_address'], cred_api['username'], cred_api['password'])
 
 def concat(str1, str2):

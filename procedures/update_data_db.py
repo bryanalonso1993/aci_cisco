@@ -60,7 +60,7 @@ def update_health_nodes():
         con.operational_sql_insert_rows("""insert into health_nodes(`healthAvg`,`healthMax`,`healthMin`,`repIntvEnd`,`repIntvStart`,`node_id`,`time_exec`) values (%s,%s,%s,%s,%s,%s,%s)
                                         on duplicate key update `healthAvg`=VALUES(`healthAvg`),`healthMax`=VALUES(`healthMax`),`healthMin`=VALUES(`healthMin`),`repIntvEnd`=VALUES(`repIntvEnd`),
                                         `repIntvStart`=VALUES(`repIntvStart`),`node_id`=VALUES(`node_id`), `time_exec`=VALUES(`time_exec`)""", *datasets)
-    
+
 def update_supervisora_status():
     list_nodes = list_node_id()
     for node_id in list_nodes:

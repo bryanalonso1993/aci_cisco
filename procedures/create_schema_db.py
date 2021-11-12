@@ -2,11 +2,9 @@
 import sys
 import os
 
-# root path
-MAIN_PATH = os.path.join(os.getcwd())
 # import backend database module's
-sys.path.insert(1, os.path.join(MAIN_PATH, "infraestructure"))
-sys.path.insert(1, os.path.join(MAIN_PATH, "helpers"))
+sys.path.insert(1, os.path.join(os.getcwd(), "infraestructure"))
+sys.path.insert(1, os.path.join(os.getcwd(), "helpers"))
 
 from Database import ControllerMariaDB
 from resources import CREDENTIALS_DATABASE
